@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --caseColor: #575757;
+    --screen:#bbd1be;
+    --button-symbol: #f9a344
+}
+body {
+    background-color: #99c088;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator-case {
+    background-color: var(--caseColor);
+    padding: 20px;
+    border-radius: 30px;
+    width: 320px;
+    height: 480px;
+    display: grid;
+    grid-template-areas:
+    "screen1 screen1 screen1 screen1"
+    "button1 button1 button1 button1"
+    "button1 button1 button1 button1"
+    "button1 button1 button1 button1"
+    "button1 button1 button1 button1";
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 120px 120px 120px 120px;
+    place-content: center;
+    box-shadow: 0 10px 10px 0px black;
+
+}
+.screen {
+    background-color: var(--screen);
+    border-radius: 20px;
+    margin: 30px 50px 10px;
+    grid-area: screen1;
+    text-align: end;
+    padding: 20px;
+    font-size: 40px;
+    border: 1px solid var(--caseColor);
+    box-shadow: 0 1px 5px 0 black;
+    outline: none;
+}
+
+
+.buttons {
+    margin: 20px 0;
+    grid-area: button1;
+    padding: 0 40px;
+}
+.button {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--caseColor);
+    margin: 2px 2px 10px;
+    font-size: 16px;
+    box-shadow: 0 1px 2px 0 black;
+    cursor: pointer;
+}
+.button:hover {
+    box-shadow: 0 1px 5px 0 black;
+    background-color: var(--screen);
+}
+
+.button1 {
+    grid-area: button1;
+}
+.button-equals {
+    background-color: var(--button-symbol);
+}
+.button-equals:hover {
+    background-color: rgb(208, 4, 4);
+}
