@@ -11,28 +11,30 @@
     <div class="container">
         <div class="calculator-case">
            
-                <input type="number" placeholder="0" class="screen screen1">
+                <input type="text" placeholder="0" class="screen screen1">
         
             <div class="buttons">
-                <button class="button1 button">7</button>
-                <button class="button1 button">8</button>
-                <button class="button1 button">9</button>
-                <button class="button1 button">÷</button>
-                <button class="button1 button">4</button>
-                <button class="button1 button">5</button>
-                <button class="button1 button">6</button>
-                <button class="button1 button">x</button>
-                <button class="button1 button">1</button>
-                <button class="button1 button">2</button>
-                <button class="button1 button">3</button>
-                <button class="button1 button">-</button>
-                <button class="button1 button">0</button>
-                <button class="button1 button">.</button>
-                <button class="button1 button">+</button>
-                <button class="button1 button button-equals">=</button>
+                <button data-button-number class="button1 button">7</button>
+                <button data-button-number class="button1 button">8</button>
+                <button data-button-number class="button1 button">9</button>
+                <button data-operation class="button1 button">÷</button>
+                <button data-button-number class="button1 button" >4</button>
+                <button data-button-number class="button1 button" >5</button>
+                <button data-button-number class="button1 button" >6</button>
+                <button data-operation class="button1 button">x</button>
+                <button data-button-number class="button1 button" >1</button>
+                <button data-button-number class="button1 button" >2</button>
+                <button data-button-number class="button1 button" >3</button>
+                <button data-operation class="button1 button">-</button>
+                <button data-button-number class="button1 button" >0</button>
+                <button data-dot class="button1 button">.</button>
+                <button data-operation class="button1 button">+</button>
+                <button data-equals type="button" class="button1 button button-equals" onclick="result()">
+                    =
+                </button>
             </div>
         </div>
     </div>
-    
+   <script src="/Calculator/calculator.js"></script>
 </body>
 </html>
